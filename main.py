@@ -49,14 +49,26 @@ def hh_girls():
     print (h_h)
     count = 0
     id = input("put the girl id:")
+    
+    try:
+        os.makedirs("HentaiHeroes/girls/")
+    except:
+        pass
+    try:
+        os.mkdir(f"HentaiHeroes/girls/girl_{str(id)}/")
+    except:
+        print(f"girl already downloaded or delete the file girl_{str(id)}")
+        time.sleep(3)
+        comix_harem()
 
+        
     for i in range (6):
         try:
-            f = open(str(count)+".webp",'wb')
+            f = open(f"HentaiHeroes/girls/girl_{str(id)}/" + str(count)+".webp",'wb')
             f.write(requests.get(f"https://hh2.hh-content.com/pictures/girls/{str(id)}/ava"+str(count)+"-300x.webp").content)
             f.close()
         
-            file = str(count)+".webp"
+            file = f"HentaiHeroes/girls/girl_{str(id)}/"+str(count)+".webp"
             count += 1
 
             if os.path.getsize(file) < 1024:
@@ -80,12 +92,23 @@ def hh_ico():
         os.system("clear")
     print (h_h)
     count = 1
+    
+    try:
+        os.makedirs("HentaiHeroes/avatars/")
+    except:
+        pass
+    try:
+        os.mkdir("HentaiHeroes/avatars/")
+    except:
+        pass
+
+
     for i in range (2000):
         try:
-            f = open(str(count)+".jpg",'wb')
+            f = open("HentaiHeroes/avatars/"+str(count)+".jpg",'wb')
             f.write(requests.get(f"https://hh2.hh-content.com/pictures/hero/ico/"+str(count)+".jpg").content)
             f.close()
-            file = str(count)+".jpg"
+            file = "HentaiHeroes/avatars/"+str(count)+".jpg"
             stat = os.path.getsize(file)
             count += 1
 
@@ -129,14 +152,26 @@ def ch_girls():
     print (h_h)
     count = 0
     id = input("put the girl id:")
+    
+    try:
+        os.makedirs("ComixHarem/girls/")
+    except:
+        pass
+    try:
+        os.mkdir(f"ComixHarem/girls/girl_{str(id)}/")
+    except:
+        print(f"girl already downloaded or delete the file girl_{str(id)}")
+        time.sleep(3)
+        comix_harem()
 
+        
     for i in range (6):
         try:
-            f = open(str(count)+".webp",'wb')
+            f = open(f"ComixHarem/girls/girl_{str(id)}/" + str(count)+".webp",'wb')
             f.write(requests.get(f"https://ch.hh-content.com/pictures/girls/{str(id)}/ava"+str(count)+"-300x.webp").content)
             f.close()
         
-            file = str(count)+".webp"
+            file = f"ComixHarem/girls/girl_{str(id)}/"+str(count)+".webp"
             count += 1
 
             if os.path.getsize(file) < 1024:
@@ -159,12 +194,23 @@ def ch_ico():
         os.system("clear")
     print (c_h)
     count = 1
+    
+    try:
+        os.makedirs("ComixHarem/avatars/")
+    except:
+        pass
+    try:
+        os.mkdir("ComixHarem/avatars/")
+    except:
+        pass
+
+
     for i in range (2000):
         try:
-            f = open(str(count)+".jpg",'wb')
+            f = open("ComixHarem/avatars/"+str(count)+".jpg",'wb')
             f.write(requests.get(f"https://ch.hh-content.com/pictures/hero/ico/"+str(count)+".jpg").content)
             f.close()
-            file = str(count)+".jpg"
+            file = "ComixHarem/avatars/"+str(count)+".jpg"
             stat = os.path.getsize(file)
             count += 1
 
@@ -208,13 +254,26 @@ def gh_boys():
     count = 0
     id = input("put the boy id:")
 
+    
+    try:
+        os.makedirs("GayHarem/boys/")
+    except:
+        pass
+    try:
+        os.mkdir(f"GayHarem/boys/boy_{str(id)}/")
+    except:
+        print(f"boy already downloaded or delete the file boy_{str(id)}")
+        time.sleep(3)
+        gay_harem()
+
+      
     for i in range (6):
         try:
-            f = open(str(count)+".webp",'wb')
+            f = open(f"GayHarem/boys/boy_{str(id)}/" + str(count)+".webp",'wb')
             f.write(requests.get(f"https://gh1.hh-content.com/pictures/girls/{str(id)}/ava"+str(count)+"-300x.webp").content)
             f.close()
         
-            file = str(count)+".webp"
+            file = f"GayHarem/boys/boy_{str(id)}/"+str(count)+".webp"
             count += 1
 
             if os.path.getsize(file) < 1024:
@@ -238,12 +297,23 @@ def gh_ico():
         os.system("clear")
     print (g_h)
     count = 1
+    
+    try:
+        os.makedirs("GayHarem/avatars/")
+    except:
+        pass
+    try:
+        os.mkdir("GayHarem/avatars/")
+    except:
+        pass
+
+
     for i in range (2000):
         try:
-            f = open(str(count)+".jpg",'wb')
+            f = open("GayHarem/avatars/"+str(count)+".jpg",'wb')
             f.write(requests.get(f"https://gh1.hh-content.com/pictures/hero/ico/"+str(count)+".jpg").content)
             f.close()
-            file = str(count)+".jpg"
+            file = "GayHarem/avatars/"+str(count)+".jpg"
             stat = os.path.getsize(file)
             count += 1
 
@@ -287,13 +357,26 @@ def sh_girls():
     count = 0
     id = input("put the girl id:")
 
+    
+    try:
+        os.makedirs("HornyHeroes/girls/")
+    except:
+        pass
+    try:
+        os.mkdir(f"HornyHeroes/girls/girl_{str(id)}/")
+    except:
+        print(f"girl already downloaded or delete the file girl_{str(id)}")
+        time.sleep(3)
+        horny_heroes()
+
+        
     for i in range (6):
         try:
-            f = open(str(count)+".webp",'wb')
+            f = open(f"HornyHeroes/girls/girl_{str(id)}/" + str(count)+".webp",'wb')
             f.write(requests.get(f"https://sh.hh-content.com/pictures/girls/{str(id)}/ava"+str(count)+"-300x.webp").content)
             f.close()
-        
-            file = str(count)+".webp"
+
+            file = f"HornyHeroes/girls/girl_{str(id)}/"+str(count)+".webp"
             count += 1
 
             if os.path.getsize(file) < 1024:
@@ -317,12 +400,24 @@ def sh_ico():
         os.system("clear")
     print (s_h)
     count = 1
+    
+    try:
+        os.makedirs("HornyHeroes/avatars/")
+    except:
+        pass
+    try:
+        os.mkdir("HornyHeroes/avatars/")
+    except:
+        pass
+
+
+    
     for i in range (2000):
         try:
-            f = open(str(count)+".jpg",'wb')
-            f.write(requests.get(f"https://sh1.hh-content.com/pictures/hero/ico/"+str(count)+".jpg").content)
+            f = open("HornyHeroes/avatars/"+str(count)+".jpg",'wb')
+            f.write(requests.get(f"https://sh.hh-content.com/pictures/hero/ico/"+str(count)+".jpg").content)
             f.close()
-            file = str(count)+".jpg"
+            file = "HornyHeroes/avatars/"+str(count)+".jpg"
             stat = os.path.getsize(file)
             count += 1
 
