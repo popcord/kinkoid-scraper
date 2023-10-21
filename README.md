@@ -1,2 +1,2 @@
-# hentai-heroes-scraper
-for scraap hentai heroes, comix harem and gay harem
+# KINKOID-scraper
+to scrap all games of kinkoid
